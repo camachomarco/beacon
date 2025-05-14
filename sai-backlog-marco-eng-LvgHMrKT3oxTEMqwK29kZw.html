@@ -18,60 +18,334 @@
 
         <ol class="numbered-list">
           <li>
-            <strong>Internal Admin Dashboard</strong>
+            <strong>Internal Admin Dashboard (~40hrs)</strong>
             <ul class="bulleted-list">
               <li>
-                Objective:
+                Goal:
                 <ul class="bulleted-list">
-                  <li>Create an internal admin dashboard</li>
+                  <li>
+                    Create an internal admin dashboard to allow employees to see
+                    internal indicators and manage client's accounts.
+                  </li>
+                </ul>
+                <ul class="bulleted-list">
+                  <li>
+                    User can input filters: Clients, Users, Time period, etc. in
+                    order to track different things such as:
+                    <ul class="bulleted-list">
+                      <li>
+                        Usage (per Client(s), per Time Period, per User(s))
+                      </li>
+                    </ul>
+                    <ul class="bulleted-list">
+                      <li>
+                        Billing (per Client(s), per Time Period, per User(s))
+                      </li>
+                    </ul>
+                    <ul class="bulleted-list">
+                      <li>
+                        Invoices (per Client(s), per Time Period, per User(s))
+                        with their status
+                      </li>
+                    </ul>
+                    <ul class="bulleted-list">
+                      <li>Validation (e.g. Usage vs Billing)</li>
+                    </ul>
+                    <ul class="bulleted-list">
+                      <li>
+                        (Optional) MRR/ARR with growth percentage and forecast
+                      </li>
+                    </ul>
+                    <ul class="bulleted-list">
+                      <li>
+                        (Optional) Leaderboard of top clients (by money spent)
+                      </li>
+                    </ul>
+                    <ul class="bulleted-list">
+                      <li>
+                        (Optional) Leaderboard of top users (by money spent)
+                      </li>
+                    </ul>
+                    <ul class="bulleted-list">
+                      <li>Latest errors & alerts</li>
+                    </ul>
+                    <ul class="bulleted-list">
+                      <li>Export button to spreadsheet</li>
+                    </ul>
+                  </li>
                 </ul>
               </li>
+            </ul>
+            <ul class="bulleted-list">
               <li>
                 Tasks:
                 <ul class="bulleted-list">
-                  <li>Implement UI components</li>
-                  <li>Configure relevant alerts</li>
+                  <li>
+                    Create dedicated backend endpoints (if necessary)
+                    <ul class="bulleted-list">
+                      <li>
+                        <code>GET</code>
+                        <ul class="bulleted-list">
+                          <li>all companies</li>
+                        </ul>
+                        <ul class="bulleted-list">
+                          <li>all users</li>
+                        </ul>
+                        <ul class="bulleted-list">
+                          <li>usage and billing data for given company(s)</li>
+                        </ul>
+                        <ul class="bulleted-list">
+                          <li>usage and billing data for user(s)</li>
+                        </ul>
+                        <ul class="bulleted-list">
+                          <li>validation data (TBD)</li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+                <ul class="bulleted-list">
+                  <li>Implement UI components with Retool</li>
+                </ul>
+                <ul class="bulleted-list">
+                  <li>Set up all relevant alerts</li>
+                </ul>
+                <ul class="bulleted-list">
+                  <li>Implement export functionality</li>
+                </ul>
+                <ul class="bulleted-list">
+                  <li>Implement authentication and deploy</li>
                 </ul>
               </li>
             </ul>
           </li>
 
           <li>
-            <strong>Frontend Logging System</strong>
+            <strong>Frontend Logging System (~24hrs)</strong>
             <ul class="bulleted-list">
               <li>
-                Objective:
+                Goal:
                 <ul class="bulleted-list">
-                  <li>Implement an appropriate logging system</li>
+                  <li>
+                    Implement a proper logging system in the frontend to avoid
+                    confusion
+                  </li>
                 </ul>
               </li>
+            </ul>
+            <ul class="bulleted-list">
               <li>
                 Tasks:
                 <ul class="bulleted-list">
-                  <li>Standardize logging structure</li>
-                  <li>Configure relevant alerts</li>
+                  <li>
+                    Standardize logging structure across the whole pipeline
+                  </li>
+                </ul>
+                <ul class="bulleted-list">
+                  <li>
+                    Remove all unnecessary logs in the frontend (no console.log
+                    in prod)
+                  </li>
+                </ul>
+                <ul class="bulleted-list">
+                  <li>Add all necessary logs in the frontend</li>
+                </ul>
+                <ul class="bulleted-list">
+                  <li>Send all logs to Cloudwatch</li>
+                </ul>
+                <ul class="bulleted-list">
+                  <li>Test with script to stream the logs</li>
+                </ul>
+                <ul class="bulleted-list">
+                  <li>Setup relevant alerts</li>
                 </ul>
               </li>
             </ul>
           </li>
         </ol>
 
+        <ol class="numbered-list" start="3">
+          <li>
+            <strong
+              >Demo Video for
+              <a href="http://solutionai.ca">solutionai.ca</a> (~2-4hrs)</strong
+            >
+          </li>
+        </ol>
+
+        <ol class="numbered-list" start="4">
+          <li><strong>Video tutorial (1hr)</strong></li>
+        </ol>
+
         <!-- Phase 2 -->
-        <h1>Phase 2: Consolidation</h1>
+        <h1>Phase 2: Solidifying</h1>
 
         <ol class="numbered-list">
-          <li><strong>Finalize media queries</strong></li>
-          <li><strong>Allow document download</strong></li>
+          <li><strong>Finish media queries (~30-40hrs)</strong></li>
+        </ol>
+
+        <ol class="numbered-list" start="2">
+          <li><strong>Allow download document (even when failed)</strong></li>
+        </ol>
+
+        <ol class="numbered-list" start="3">
           <li><strong>Block cross-company access in backend</strong></li>
         </ol>
 
+        <ol class="numbered-list" start="4">
+          <li>
+            <strong>Integrated Client Admin Dashboard</strong>
+            <ul class="bulleted-list">
+              <li>
+                Goal:
+                <ul class="bulleted-list">
+                  <li>
+                    Create a client admin panel that allows clients to manage
+                    their team, by adding or removing users in their company,
+                    changing their roles and seeing relevant indicators/stats.
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <ul class="bulleted-list">
+              <li>
+                Tasks:
+                <ul class="bulleted-list">
+                  <li>Plan and design UI components</li>
+                </ul>
+                <ul class="bulleted-list">
+                  <li>
+                    Plan and design backend endpoints (if not created yet)
+                  </li>
+                </ul>
+                <ul class="bulleted-list">
+                  <li>Implement backend endpoints</li>
+                </ul>
+                <ul class="bulleted-list">
+                  <li>Implement UI components</li>
+                </ul>
+                <ul class="bulleted-list">
+                  <li>Test</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ol>
+
+        <ol class="numbered-list" start="5">
+          <li>
+            <strong
+              >Implement Error Handling Best Practices (End-to-end)
+              (~40hrs+)</strong
+            >
+          </li>
+        </ol>
+
+        <ol class="numbered-list" start="6">
+          <li><strong>End-to-end Logging System (~30hrs)</strong></li>
+        </ol>
+
+        <ol class="numbered-list" start="7">
+          <li><strong>Frontend Refactoring (~60hrs+)</strong></li>
+        </ol>
+
+        <ol class="numbered-list" start="8">
+          <li>
+            <strong>Download custom page combination into one document</strong>
+          </li>
+        </ol>
+
+        <ol class="numbered-list" start="9">
+          <li><strong>Perform Load Testing</strong></li>
+        </ol>
+
+        <ol class="numbered-list" start="10">
+          <li><strong>Implement Testing Infrastructure</strong></li>
+        </ol>
+
+        <ol class="numbered-list" start="11">
+          <li>
+            <strong
+              >Implement CI/CD Best Practices (linter, formatter, merge only by
+              PR, Branch naming convention, etc.)</strong
+            >
+          </li>
+        </ol>
+
+        <ol class="numbered-list" start="12">
+          <li>
+            <strong
+              >Migrate to Auth.js v5 or better authentication system</strong
+            >
+          </li>
+        </ol>
+
+        <ol class="numbered-list" start="13">
+          <li><strong>Technical Monitoring/Observability</strong></li>
+        </ol>
+
+        <ol class="numbered-list" start="14">
+          <li><strong>Finish solutionai.ca</strong></li>
+        </ol>
+
+        <ol class="numbered-list" start="15">
+          <li><strong>Bug fixes</strong></li>
+        </ol>
+
+        <ol class="numbered-list" start="16">
+          <li><strong>Add tooltips</strong></li>
+        </ol>
+
         <!-- Phase 3 -->
-        <h1>Phase 3: Development of New Features</h1>
+        <h1>Phase 3: Developing new features</h1>
 
         <ol class="numbered-list">
-          <li><strong>Support for multiple case IDs</strong></li>
-          <li><strong>Display continuous document in PDF viewer</strong></li>
+          <li><strong>Support multiple case IDs</strong></li>
+        </ol>
+
+        <ol class="numbered-list" start="2">
+          <li><strong>Show continuous document in PDF viewer</strong></li>
+        </ol>
+
+        <ol class="numbered-list" start="3">
           <li><strong>Allow users to change client</strong></li>
+        </ol>
+
+        <ol class="numbered-list" start="4">
+          <li>
+            <strong
+              >Allow users to give classification correction/feedback</strong
+            >
+          </li>
+        </ol>
+
+        <ol class="numbered-list" start="5">
+          <li><strong>Implement Chatbot</strong></li>
+        </ol>
+
+        <ol class="numbered-list" start="6">
+          <li><strong>Implement Context Retrieval System</strong></li>
+        </ol>
+
+        <ol class="numbered-list" start="7">
+          <li>
+            <strong
+              >Dropdown with API data for finding clients when uploading a
+              document</strong
+            >
+          </li>
+        </ol>
+
+        <ol class="numbered-list" start="8">
+          <li><strong>Block access to doc if doc isn't complete</strong></li>
+        </ol>
+
+        <ol class="numbered-list" start="9">
+          <li><strong>Set up CDN</strong></li>
+        </ol>
+
+        <ol class="numbered-list" start="10">
+          <li><strong>Set up 2FA with email login</strong></li>
         </ol>
 
         <!-- Example of a table -->
